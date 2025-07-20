@@ -1,0 +1,222 @@
+Reset & Global
+/* Wrapper utama */
+.login-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+}
+
+/* Card Login */
+.login-card {
+  background: #fff;
+  width: 800px;
+  max-width: 95%;
+  height: 450px;
+  display: flex;
+  border-radius: 15px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: all 0.3s ease-in-out;
+}
+
+/* Bagian Kiri (Sign In) */
+.login-left {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.login-left h2 {
+  margin-bottom: 20px;
+  font-size: 28px;
+}
+
+.text-muted {
+  color: #888;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+/* Social Login */
+.social-login {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.social-btn {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 1px solid #ccc;
+  background: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.social-btn i {
+  color: #000; /* Ikon hitam */
+  font-size: 18px;
+}
+
+.social-btn:hover {
+  border-color: #6a11cb;
+  background: #f5f5f5;
+}
+
+.social-btn:hover i {
+  color: #2575fc;
+}
+
+/* Form Input */
+.login-form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 80%;
+}
+
+.input-field {
+  background: #f7f7f7;
+  color: #333;
+  padding: 12px 15px;
+  border-radius: 30px;
+  border: 1px solid #ccc;
+  outline: none;
+  font-size: 14px;
+}
+
+.input-field:focus {
+  border-color: #6a11cb;
+}
+
+/* Lupa Password */
+.forgot-password {
+  color: #666;
+  font-size: 12px;
+  text-align: right;
+  text-decoration: none;
+  margin-top: -10px;
+}
+
+.forgot-password:hover {
+  text-decoration: underline;
+}
+
+/* Tombol Sign In */
+.sign-in-btn {
+  padding: 12px;
+  border-radius: 30px;
+  border: none;
+  background: #5c37d3;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.sign-in-btn:hover {
+  background: #4728a5;
+}
+
+/* Bagian Kanan (Hello Friend) */
+.login-right {
+  flex: 1;
+  background: linear-gradient(135deg, #6a11cb 0%, #2575fc 100%);
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 40px;
+  text-align: center;
+  clip-path: ellipse(70% 100% at 70% 50%);
+}
+
+.login-right h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+}
+
+.login-right p {
+  font-size: 14px;
+  margin-bottom: 20px;
+  max-width: 250px;
+}
+
+/* Tombol Sign Up */
+.sign-up-btn {
+  padding: 10px 25px;
+  border-radius: 30px;
+  border: 1px solid #fff;
+  background: transparent;
+  color: white;
+  font-size: 14px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s, color 0.3s;
+}
+
+.sign-up-btn:hover {
+  background: white;
+  color: #5c37d3;
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+  .login-card {
+    flex-direction: column;
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+  }
+
+  .login-right {
+    clip-path: none;
+    border-top-left-radius: 0;
+    border-top-right-radius: 0;
+    border-bottom-left-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+
+  .login-left {
+    padding: 20px;
+  }
+
+  .login-right {
+    padding: 20px;
+  }
+
+  .social-btn {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .login-left h2,
+  .login-right h2 {
+    font-size: 22px;
+  }
+
+  .input-field {
+    font-size: 12px;
+    padding: 10px;
+  }
+
+  .sign-in-btn,
+  .sign-up-btn {
+    font-size: 12px;
+    padding: 10px;
+  }
+}
