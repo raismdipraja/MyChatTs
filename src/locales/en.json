@@ -1,0 +1,9 @@
+{
+  "login": "Login",
+  "password": "Password",
+  "sign_in": "Sign In",
+  "hello_friend": "Hello, Friend!",
+  "register_message": "Register with your personal details to use all of site features",
+  "forget_password": "Forget Your Password?",
+  "login_with_email_password": "or use your email password"
+}
